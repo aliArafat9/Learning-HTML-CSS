@@ -10,24 +10,29 @@
         }
         .container{
             background-color: wheat;
-            height: 50vh;
+            height: 100vh;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            /* align-content: center; */
         }
         .box1{
             height: 244px;
             width: 324px;
             background-color: blue;
             border: 2px solid black;
+            order: 4;
+            /* align-self: flex-end; */
+            flex-grow: 2;
         }
         .box2{
             height: 244px;
             width: 324px;
             background-color:red;
             border: 2px solid black;
+            flex-grow: 1;
         }
     </style>
 </head>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /*  if not using flex box
+    * {margin: 0;padding: 0;}
+    ul {padding: 28px;}
+    li {list-style: none;display: inline;padding: 0 35px;}
+    header {background-color: black;color: white;}
+    .left{height: 50vh;width: 40vw;float: left;background-color: blue;}
+    .right{height: 50vh;width: 40vw;float: right;background-color: red;} */
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      padding: 28px;
+    }
+    li {
+      list-style: none;
+      display: inline;
+      padding: 0 35px;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+    }
+    .left{
+        height: 50vh;
+        width: 40vw;
+        background-color: blue;
+    }
+    .right{
+        height: 50vh;
+        width: 40vw;
+        background-color: red;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+        <div class="left">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem magni in velit itaque! Asperiores dignissimos cumque dolor provident. Inventore modi, dolores repellendus tempore id, illum ipsam amet labore asperiores numquam quae minus.
+        </div>
+        <div class="right">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui soluta labore sunt, nisi iusto modi! Laudantium suscipit enim qui explicabo reiciendis corporis eaque molestiae eligendi quis placeat, ipsum repellat, minus dolore nemo dolores modi necessitatibus, dolorum accusamus optio. Laudantium, ratione!
+        </div>
+    </div>
+  </body>
+</html>
