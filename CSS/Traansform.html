@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: red;
+        height: 444px;
+      }
+      .box {
+        border: 2px solid black;
+        display: inline-block;
+        /* transform: translate(146px,50px) rotate(60deg); */
+        /* transform-origin: 0;  */
+        /* transform: scale(3,2); */
+        /* transform: skew(4deg,6deg); */
+        /* transform: matrix(); */
+      }
+      img {
+        width: 555px;
+        height: 666px;
+        /* transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+        transition-delay: 1s; */
+        transition: opacity 1s ease-out, transform 2s ease-in, 1s ease-in-out, height 4s ease-in;
+      }
+      /* img:hover{
+            width: 66px;
+        } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img id="MyImage" src="pic.jpg" />
+        <button id="btn">Toggle</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    MyImage.style.width = '146px';
+    MyImage.style.height = '146px';
+    btn.addEventListener("click",()=>{
+        MyImage.style.height = '146px';
+
+        if (MyImage.style.width === "55px";){
+            MyImage.style.width = "55px";
+        }
+        else if (MyImage.style.width === "55px";){
+            MyImage.style.width = "55px";
+        }
+
+    })
+  </script>
+</html>
